@@ -1,0 +1,26 @@
+.courses-tab-content {
+  border: 1px solid #888;
+  padding: 2.2rem;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 80%;
+}
+
+.courses-tab-desc {
+  margin: 0.8rem 0;
+  max-width: 80rem;
+}
+
+.courses-explore-btn {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.courses-explore-btn:hover {
+  background-color: #ddd;
+  border: 1px solid #999;
+}
+
