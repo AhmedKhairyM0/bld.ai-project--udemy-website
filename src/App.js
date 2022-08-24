@@ -1,6 +1,5 @@
-import "./App.css";
-import "./components/_media_queries.css";
 import CoursesTabContent from "./components/coursesTabContent";
+import "./components/_media_queries.css";
 
 function App() {
   const coursesObj = {
