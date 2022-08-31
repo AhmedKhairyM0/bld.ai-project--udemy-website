@@ -5,7 +5,7 @@ function CourseCard({ course }) {
   return (
     <div className="course-card">
       <a href={course.link}>
-        <CourseCardImage image={course.image} title={course.title} />
+        <img src={course.image} alt={course.title} />
         <div className="course-title">
           <h3>{course.title}</h3>
         </div>
@@ -23,9 +23,6 @@ function CourseCard({ course }) {
   );
 }
 
-function CourseCardImage({ image, title }) {
-  return <img src={image} alt={title} />;
-}
 
 function CourseRating({ stars, views }) {
   return (
