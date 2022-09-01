@@ -1,11 +1,11 @@
 import CourseCard from "./courseCard";
-import "./coursesCards.css";
+import styles from "./coursesCards.module.css";
 
 function CoursesCards({ courses }) {
   const coursesArr = courses.map((course) => (
-                    <CourseCard course={course} key={course.id} />
-                ));
-  return <div className="courses-cards-grid">{coursesArr}</div>;
+    <CourseCard course={course} key={course.id} />
+  ));
+  return <div className={styles.coursesCardsGrid}>{coursesArr}</div>;
 }
 
 export default CoursesCards;

@@ -1,0 +1,17 @@
+@media screen and (max-width: 1400px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+}

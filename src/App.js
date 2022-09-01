@@ -1,6 +1,6 @@
 import CoursesTabContent from "./components/coursesTabContent";
-import "./components/_media_queries.css";
-import * as coursesData from "./data/courses.json";
+import "./App.css";
+import coursesData from "./data/courses.json";
 
 function App() {
   return (
