@@ -1,13 +1,13 @@
 import React from "react";
 import CoursesCards from "./coursesCards";
-import "./coursesTabContent.css";
+import styles from "./coursesTabContent.module.css";
 
 function CoursesTabContent({ coursesTab }) {
   return (
-    <div className="courses-tab-content">
-      <h2 className="courses-tab-heading">{coursesTab.heading}</h2>
-      <p className="courses-tab-desc">{coursesTab.description}</p>
-      <a href={coursesTab.url} className="courses-explore-btn">{`Explore ${coursesTab.name}`}</a>
+    <div className={styles.coursesTabContent}>
+      <h2>{coursesTab.heading}</h2>
+      <p className={styles.coursesTabDesc}>{coursesTab.description}</p>
+      <a href={coursesTab.url} className={styles.coursesExploreBtn}>{`Explore ${coursesTab.name}`}</a>
       <CoursesCards courses={coursesTab.courses} />
     </div>
   );

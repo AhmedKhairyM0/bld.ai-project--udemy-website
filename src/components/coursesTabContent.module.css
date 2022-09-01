@@ -1,4 +1,4 @@
-.courses-tab-content {
+.coursesTabContent {
   border: 1px solid #888;
   padding: 2.2rem;
   margin: auto;
@@ -6,12 +6,12 @@
   max-width: 80%;
 }
 
-.courses-tab-desc {
+.coursesTabDesc {
   margin: 0.8rem 0;
   max-width: 80rem;
 }
 
-.courses-explore-btn {
+.coursesExploreBtn {
   border: 1px solid #ccc;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -19,7 +19,7 @@
   display: inline-block;
 }
 
-.courses-explore-btn:hover {
+.coursesExploreBtn:hover {
   background-color: #ddd;
   border: 1px solid #999;
 }

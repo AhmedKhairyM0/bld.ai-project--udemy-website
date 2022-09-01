@@ -1,45 +1,45 @@
 import React from "react";
-import "./courseCard.css";
+import ReactStars from "react-stars";
+import styles from "./courseCard.module.css";
 
 function CourseCard({ course }) {
   return (
-    <div className="course-card">
+    <div className={styles.courseCard}>
       <a href={course.link}>
-        <CourseCardImage image={course.image} title={course.title} />
-        <div className="course-title">
+        <img src={course.image} alt={course.title} />
+        <div className={styles.courseTitle}>
           <h3>{course.title}</h3>
         </div>
-        <div className="course-instructor">{course.instructor}</div>
+        <div className={styles.courseInstructor}>{course.instructor}</div>
         <CourseRating stars={course.stars} views={course.views} />
         <div>
-          <span className="course-price">{course.price}</span>
-          <span className="course-old-price">{course.old_price}</span>
+          <span className={styles.coursePrice}>{course.price}</span>
+          <span className={styles.courseOldPrice}>{course.old_price}</span>
         </div>
         {course.bestSeller ? (
-          <div className="course-bestseller">Bestseller</div>
+          <div className={styles.courseBestseller}>Bestseller</div>
         ) : null}
       </a>
     </div>
   );
 }
 
-function CourseCardImage({ image, title }) {
-  return <img src={image} alt={title} />;
-}
-
 function CourseRating({ stars, views }) {
+  const starsNum =
+    stars - Math.trunc(stars) > 0 ? Math.trunc(stars) + 0.5 : stars;
   return (
     <>
-      <div className="course-rating">
-        <span className="course-rating-num">{stars}</span>
-        <span className="course-rating-stars">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star-half-stroke"></i>
-        </span>
-        <span className="course-views">{views}</span>
+      <div className={styles.courseRating}>
+        <span className={styles.courseRatingNum}>{stars}</span>
+        <ReactStars
+          count={5}
+          value={starsNum}
+          size={20}
+          color1={"gray"}
+          color2={"#ffd700"}
+          edit={false}
+        />
+        <span className={styles.courseViews}>{views}</span>
       </div>
     </>
   );
