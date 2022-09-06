@@ -1,5 +1,6 @@
 import React from "react";
 import ReactStars from "react-stars";
+
 import styles from "./courseCard.module.css";
 
 function CourseCard({ course }) {
@@ -28,20 +29,19 @@ function CourseRating({ stars, views }) {
   const starsNum =
     stars - Math.trunc(stars) > 0 ? Math.trunc(stars) + 0.5 : stars;
   return (
-    <>
-      <div className={styles.courseRating}>
-        <span className={styles.courseRatingNum}>{stars}</span>
-        <ReactStars
-          count={5}
-          value={starsNum}
-          size={20}
-          color1={"gray"}
-          color2={"#ffd700"}
-          edit={false}
-        />
-        <span className={styles.courseViews}>{views}</span>
-      </div>
-    </>
+    <div className={styles.courseRating}>
+      <span className={styles.courseRatingNum}>{stars}</span>
+      <ReactStars
+        className={styles.starsRating}
+        count={5}
+        value={starsNum}
+        size={18}
+        color1={"gray"}
+        color2={"#ffd700"}
+        edit={false}
+      />
+      <span className={styles.courseViews}>{views}</span>
+    </div>
   );
 }
 

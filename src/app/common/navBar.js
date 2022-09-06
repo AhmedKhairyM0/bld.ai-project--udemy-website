@@ -1,14 +1,12 @@
 import React from "react";
-import styles from "./navBar.module.css";
-import logo from "../assets/images/logo-udemy.svg";
-// import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-  faCartShopping,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass, faCartShopping, faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "./navBar.module.css";
+
+import logo from "../../assets/images/logo-udemy.svg";
 
 function NavBar() {
   return (
@@ -31,9 +29,15 @@ function NavBar() {
         <FontAwesomeIcon icon={faCartShopping} />
       </span>
       <span className={styles.groupBtn}>
-        <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}>Login</span>
-        <span className={`${styles.commonBtn} ${styles.toggleBtn1}`}>Signup</span>
-        <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}><FontAwesomeIcon icon={faGlobe} /></span>
+        <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}>
+          Login
+        </span>
+        <span className={`${styles.commonBtn} ${styles.toggleBtn1}`}>
+          Signup
+        </span>
+        <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}>
+          <FontAwesomeIcon icon={faGlobe} />
+        </span>
       </span>
     </nav>
   );
