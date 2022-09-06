@@ -1,84 +1,340 @@
 {
-  "name": "Python",
-  "heading": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  "description": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
-  "courses": [
+  "tabs": [
     {
-      "id": 4,
-      "link": "https://www.udemy.com/course/learn-python/",
-      "title": "Learn Python: Python for Beginners",
-      "instructor": "Abrar Hussain",
-      "image": "https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg",
-      "price": "319.99",
-      "old_price": "819.99",
-      "stars": 4.3,
-      "views": "2,773",
-      "category": "Python",
-      "bestSeller": true
+      "name": "Python",
+      "heading": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "description": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
+      "courses": [
+        {
+          "id": 1,
+          "link": "https://www.udemy.com/course/pythonforbeginners/",
+          "title": "Learn Python: The Complete Python Programming Course",
+          "instructor": "Avinash Jain,The Codex",
+          "image": "https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+          "price": "679.99",
+          "old_price": "1000",
+          "stars": 3.4,
+          "views": "2,948",
+          "bestSeller": false,
+          "category": "Python"
+        },
+        {
+          "id": 2,
+          "link": "https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/",
+          "title": "Learning Python for Data Analysis and Visualization",
+          "instructor": "Jose Portilla",
+          "image": "https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg",
+          "price": "1,599.99",
+          "old_price": "2000",
+          "stars": 2.4,
+          "views": "17,999",
+          "bestSeller": true,
+          "category": "Python"
+        },
+        {
+          "id": 3,
+          "link": "https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/",
+          "title": "Python for Beginners - Learn Programming from scratch",
+          "instructor": "Edwin Diaz, Coding FAcutly Solutaions",
+          "image": "https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg",
+          "price": "679.99",
+          "old_price": "1000",
+          "stars": 3.4,
+          "views": "1,781",
+          "bestSeller": false,
+          "category": "Python"
+        },
+        {
+          "id": 4,
+          "link": "https://www.udemy.com/course/learn-python/",
+          "title": "Learn Python: Python for Beginners",
+          "instructor": "Abrar Hussain",
+          "image": "https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg",
+          "price": "319.99",
+          "old_price": "800",
+          "stars": 4.3,
+          "views": "2,773",
+          "bestSeller": true,
+          "category": "Python"
+        },
+        {
+          "id": 5,
+          "link": "https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/",
+          "title": "Python Beyond the Basics - Object-Oriented Programming",
+          "instructor": "Infinite Skills",
+          "image": "https://img-c.udemycdn.com/course/480x270/449532_2aa9_7.jpg",
+          "price": "519.99",
+          "old_price": "1000",
+          "stars": 4.4,
+          "views": "2,930",
+          "bestSeller": false,
+          "category": "Python"
+        },
+        {
+          "id": 6,
+          "link": "https://www.udemy.com/course/selenium-webdriver-and-python/",
+          "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
+          "instructor": "Admas Kinfu",
+          "image": "https://img-c.udemycdn.com/course/480x270/482754_7146_6.jpg",
+          "price": "1,299.99",
+          "old_price": "1500",
+          "stars": 4.7,
+          "views": "1,813",
+          "bestSeller": false,
+          "category": "Python"
+        },
+        {
+          "id": 7,
+          "link": "https://www.udemy.com/course/teach-your-kids-to-code/",
+          "title": "Teach Your Kids to Code: Learn to Program Python at Any Age!",
+          "instructor": "Bryson Payne",
+          "image": "https://img-c.udemycdn.com/course/480x270/519554_da68_6.jpg",
+          "price": "319.99",
+          "old_price": "800",
+          "stars": 4.5,
+          "views": "8,809",
+          "bestSeller": true,
+          "category": "Python"
+        },
+        {
+          "id": 8,
+          "link": "https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/",
+          "title": "Python for Data Structures, Algorithms, and Interviews!",
+          "instructor": "Jose Portilla",
+          "image": "https://img-c.udemycdn.com/course/480x270/535622_3bc0.jpg",
+          "price": "1,299.99",
+          "old_price": "2000",
+          "stars": 4.5,
+          "views": "10.701",
+          "bestSeller": true,
+          "category": "Python"
+        },
+        {
+          "id": 9,
+          "link": "https://www.udemy.com/course/automate/",
+          "title": "Automate the Boring Stuff with Python Programming",
+          "instructor": "Al Sweigart",
+          "image": "https://img-c.udemycdn.com/course/480x270/543600_64d1_4.jpg",
+          "price": "519.99",
+          "old_price": "1000",
+          "stars": 4.7,
+          "views": "101,703",
+          "bestSeller": false,
+          "category": "Python"
+        }
+      ]
     },
     {
-      "id": 5,
-      "link": "https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/",
-      "title": "Python Beyond the Basics - Object-Oriented Programming",
-      "instructor": "Infinite Skills",
-      "image": "https://img-c.udemycdn.com/course/480x270/449532_2aa9_7.jpg",
-      "price": "519.99",
-      "old_price": "919.99",
-      "stars": 4.4,
-      "views": "2,930",
-      "category": "Python",
-      "bestSeller": false
+      "name": "Flutter",
+      "heading": "Flutter Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "description": "Flutter Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
+      "courses": [
+        {
+          "id": 11,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "Flutter & Dart - The Complete Guide [2022 Edition]",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-b.udemycdn.com/course/240x135/1708340_7108_5.jpg",
+          "price": "229.99",
+          "old_price": "800",
+          "stars": 4.6,
+          "views": "202,781",
+          "bestSeller": false,
+          "category": "Flutter"
+        },
+        {
+          "id": 12,
+          "link": "/",
+          "title": "The Complete 2021 Flutter Development Bootcamp with Dart",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-c.udemycdn.com/course/240x135/2259120_305f_6.jpg",
+          "price": "229.99",
+          "old_price": "600",
+          "stars": 4.6,
+          "views": "152,781",
+          "bestSeller": true,
+          "category": "Flutter"
+        },
+        {
+          "id": 13,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "Flutter & Dart - The Complete Guide [2022 Edition]",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-b.udemycdn.com/course/240x135/1708340_7108_5.jpg",
+          "price": "229.99",
+          "old_price": "900",
+          "stars": 4.6,
+          "views": "202,781",
+          "bestSeller": false,
+          "category": "Flutter"
+        },
+        {
+          "id": 14,
+          "link": "/",
+          "title": "The Complete 2021 Flutter Development Bootcamp with Dart",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-c.udemycdn.com/course/240x135/2259120_305f_6.jpg",
+          "price": "229.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "152,781",
+          "bestSeller": false,
+          "category": "Flutter"
+        },
+        {
+          "id": 15,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "Flutter & Dart - The Complete Guide [2022 Edition]",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-b.udemycdn.com/course/240x135/1708340_7108_5.jpg",
+          "price": "229.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "202,781",
+          "bestSeller": false,
+          "category": "Flutter"
+        },
+        {
+          "id": 16,
+          "link": "/",
+          "title": "The Complete 2021 Flutter Development Bootcamp with Dart",
+          "instructor": "Maximilian Schwarzmüller",
+          "image": "https://img-c.udemycdn.com/course/240x135/2259120_305f_6.jpg",
+          "price": "229.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "152,781",
+          "bestSeller": true,
+          "category": "Flutter"
+        }
+      ]
     },
     {
-      "id": 6,
-      "link": "https://www.udemy.com/course/selenium-webdriver-and-python/",
-      "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
-      "instructor": "Admas Kinfu",
-      "image": "https://img-c.udemycdn.com/course/480x270/482754_7146_6.jpg",
-      "price": "1,299.99",
-      "old_price": "1,919.99",
-      "stars": 4.7,
-      "views": "1,813",
-      "category": "Python",
-      "bestSeller": false
+      "name": "Web Development",
+      "heading": "Web Development Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "description": "Web Development Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
+      "courses": [
+        {
+          "id": 17,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Web Developer Bootcamp 2022",
+          "instructor": "Colt Steele",
+          "image": "https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": false,
+          "category": "Web Development"
+        },
+        {
+          "id": 18,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Complete 2022 Web Development Bootcamp",
+          "instructor": "Dr. Angela Yu",
+          "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": true,
+          "category": "Web Development"
+        },
+        {
+          "id": 19,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Web Developer Bootcamp 2022",
+          "instructor": "Colt Steele",
+          "image": "https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": false,
+          "category": "Web Development"
+        },
+        {
+          "id": 20,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Complete 2022 Web Development Bootcamp",
+          "instructor": "Dr. Angela Yu",
+          "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": false,
+          "category": "Web Development"
+        },
+        {
+          "id": 21,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Web Developer Bootcamp 2022",
+          "instructor": "Colt Steele",
+          "image": "https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": true,
+          "category": "Web Development"
+        },
+        {
+          "id": 22,
+          "link": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+          "title": "The Complete 2022 Web Development Bootcamp",
+          "instructor": "Dr. Angela Yu",
+          "image": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg",
+          "price": "219.99",
+          "old_price": "2000",
+          "stars": 4.6,
+          "views": "242,781",
+          "bestSeller": false,
+          "category": "Web Development"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Design",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
     },
     {
-      "id": 7,
-      "link": "https://www.udemy.com/course/teach-your-kids-to-code/",
-      "title": "Teach Your Kids to Code: Learn to Program Python at Any Age!",
-      "instructor": "Bryson Payne",
-      "image": "https://img-c.udemycdn.com/course/480x270/519554_da68_6.jpg",
-      "price": "319.99",
-      "old_price": "819.99",
-      "stars": 4.5,
-      "views": "8,809",
-      "category": "Python",
-      "bestSeller": true
+      "id": "2",
+      "name": "Development",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
     },
     {
-      "id": 8,
-      "link": "https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/",
-      "title": "Python for Data Structures, Algorithms, and Interviews!",
-      "instructor": "Jose Portilla",
-      "image": "https://img-c.udemycdn.com/course/480x270/535622_3bc0.jpg",
-      "price": "1,299.99",
-      "old_price": "1,919.99",
-      "stars": 4.5,
-      "views": "10.701",
-      "category": "Python",
-      "bestSeller": false
+      "id": "3",
+      "name": "Marketing",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
     },
     {
-      "id": 9,
-      "link": "https://www.udemy.com/course/automate/",
-      "title": "Automate the Boring Stuff with Python Programming",
-      "instructor": "Al Sweigart",
-      "image": "https://img-c.udemycdn.com/course/480x270/543600_64d1_4.jpg",
-      "price": "519.99",
-      "stars": 4.7,
-      "views": "101,703",
-      "category": "Python",
-      "bestSeller": true
+      "id": "4",
+      "name": "IT and Software",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Personal Development",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Business",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Photography",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Music",
+      "image": "https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
     }
   ]
 }
