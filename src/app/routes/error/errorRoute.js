@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NotMatchRoute() {
+function ErrorRoute() {
   return (
     <div>404 Not Found</div>
   )
 }
 
-export default NotMatchRoute
+export default ErrorRoute
