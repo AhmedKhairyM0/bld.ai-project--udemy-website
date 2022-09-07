@@ -11,7 +11,7 @@ import logo from "../../assets/images/logo-udemy.svg";
 function NavBar() {
   return (
     <nav>
-      <Link to="/">
+      <Link to="/" >
         <img src={logo} alt={"Udemy Logo"} className={styles.websiteLogo} />
       </Link>
       <span className={styles.navItem}>Categories</span>

@@ -1,13 +1,27 @@
 import React from "react";
+// import { useLocation } from "react-router-dom";
+import { CourseProvider } from "../../contexts/coursesContext";
+import TopContainer from "./components/topContainer";
 
-function CourseDetails(props) {
-  const { course } = props;
-  
+import course from "../../../data/course.json";
+
+function CourseDetails() {
+  // const location = useLocation();
+  // const course = location.state;
+
   return (
-    <div>
-      <div>Development # Programming Languages # Python</div>
-      <h1>Learn Python: The Complete Python Programming Course</h1>
-    </div>
+    <CourseProvider value={course}>
+        <main>
+        {/* top container */}
+        <TopContainer />
+
+        {/* sidebar container introduction */}
+        {/* sidebar container purchase */}
+        {/* navigation btns*/}
+
+        {/* what you will learn */}
+      </main>
+    </CourseProvider>
   );
 }
 

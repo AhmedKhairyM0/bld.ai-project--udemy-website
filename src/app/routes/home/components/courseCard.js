@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ReactStars from "react-stars";
 
 import styles from "./courseCard.module.css";
 
 function CourseCard({ course }) {
   return (
-    <div className={styles.courseCard}>
-      <a href={course.link}>
+    <Link
+      to='course/1'
+      state={course}
+    >
+      <div className={styles.courseCard}>
+        {/* <a href={course.link}> */}
         <img src={course.image} alt={course.title} />
         <div className={styles.courseTitle}>
           <h3>{course.title}</h3>
@@ -20,12 +25,13 @@ function CourseCard({ course }) {
         {course.bestSeller ? (
           <div className={styles.courseBestseller}>Bestseller</div>
         ) : null}
-      </a>
-    </div>
+        {/* </a> */}
+      </div>
+    </Link>
   );
 }
 
-function CourseRating({ stars, views }) {
+export function CourseRating({ stars, views }) {
   const starsNum =
     stars - Math.trunc(stars) > 0 ? Math.trunc(stars) + 0.5 : stars;
   return (

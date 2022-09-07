@@ -1,0 +1,62 @@
+:root {
+  --color-link: #cec0fc;
+}
+
+.darkContainer {
+  background-color: #1c1d1f;
+  color: white;
+}
+
+.centerContainer {
+  width: 40%;
+  margin: 0 40% 0 20%;
+}
+
+.paddingContainer {
+  padding: 2.2rem 0;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.category {
+  color: var(--color-link);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.titleCourse {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.subtitleCourse {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0.8rem 0;
+}
+
+.reviewsNum > a {
+  color: var(--color-link);
+  margin-right: 0.5rem;
+}
+
+.reviewsNum {
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.instructor {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.instructor a {
+  color: var(--color-link);
+}
+
+.iconLabel {
+  margin-right: 2rem;
+  font-size: 0.8rem;
+}

@@ -4,6 +4,7 @@ import LoadingSpinner from "../../common/loadingSpinner";
 import CoursesTabContent from "./components/coursesTabContent";
 
 function Home() {
+
   const [response, setResponse] = useState({
     isLoading: false,
     data: "",
@@ -16,6 +17,7 @@ function Home() {
       .then((response) => response.json())
       .then((result) => {
         setResponse({ ...response, isLoading: false, data: result });
+        console.log("response", response);
       })
       .catch((err) => {
         console.log("err:::", err);
@@ -24,6 +26,7 @@ function Home() {
           isLoading: false,
           error: "Something is wrong",
         });
+        console.log("response", response);
       });
   }, []);
 

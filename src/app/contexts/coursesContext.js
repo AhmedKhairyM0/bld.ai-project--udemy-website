@@ -1,8 +1,8 @@
 import React from "react";
 
-export const CoursesContext = React.createContext();
+export const CourseContext = React.createContext();
 
-const CoursesProvider = CoursesContext.Provider;
-const CoursesConsumer = CoursesContext.Consumer;
+const CourseProvider = CourseContext.Provider;
+const CourseConsumer = CourseContext.Consumer;
 
-export { CoursesConsumer, CoursesProvider };
+export { CourseConsumer, CourseProvider };

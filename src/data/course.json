@@ -1,0 +1,117 @@
+{
+  "id": "63190c63e75d0aa56511424d",
+  "title": "Learn Python: The Complete Python Programming Course",
+  "category": "Python",
+  "subtitle": "eu dolor deserunt reprehenderit ad qui eu enim consequat aliqua Lorem ad sunt deserunt ea commodo officia do mollit irure",
+  "rate_stars": 3.6022,
+  "rate_num": 5934,
+  "students_num": 90712,
+  "update_date": "2022-02-02T07:17:06 -02:00",
+  "content_lang": "Arabic",
+  "caption_lang": "Arabic",
+  "what_learn": [
+    "non pariatur eu pariatur voluptate",
+    "exercitation reprehenderit ad nulla occaecat",
+    "ipsum ex irure minim minim"
+  ],
+  "includes": [
+    "25 hours on-demand video",
+    "3 article",
+    "4 downloadable resources",
+    "Full lifetime access",
+    "Access on mobile and TV",
+    "Certificate of completion"
+  ],
+  "content": [
+    {
+      "lecture": {
+        "title": "Functions!",
+        "total_estimate_time": 45,
+        "lesons": [
+          {
+            "title": "Buttons",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "title": "Recap",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "title": "Intro to Pandas",
+            "estimate_time": 9,
+            "is_preview": true
+          },
+          {
+            "title": "Adding Paddle1",
+            "estimate_time": 9,
+            "is_preview": false
+          },
+          {
+            "title": "Creating our own Functions",
+            "estimate_time": 5,
+            "is_preview": false
+          },
+          {
+            "title": "Heavy Data Analysis",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "title": "Copying Files",
+            "estimate_time": 5,
+            "is_preview": false
+          },
+          {
+            "title": "Multiple 3D Scatter Plots",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "title": "Multiple Graphs in a Figure",
+            "estimate_time": 10,
+            "is_preview": false
+          }
+        ]
+      }
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Howe Terrell",
+      "job": "Developer and Lead Instructor",
+      "rate": 3.9008,
+      "reviews_num": 4123,
+      "students_num": 62812,
+      "courses_num": 6,
+      "bio": [
+        "Et Lorem cillum duis non ullamco sit qui voluptate ad enim aliquip. Quis velit veniam ullamco culpa nostrud esse amet adipisicing anim aute cupidatat duis occaecat fugiat. Aliquip amet cillum nostrud aute.\r\n",
+        "Consequat Lorem ea laborum Lorem sit qui deserunt ad. Quis do ut nisi quis officia. Occaecat occaecat dolor nisi labore aute consectetur amet elit ad eiusmod reprehenderit minim. Officia exercitation culpa minim reprehenderit quis aliquip tempor velit id aliqua. Nisi exercitation ex aliquip culpa cillum aute. Mollit mollit esse nisi sunt. Dolor esse ullamco exercitation consequat mollit nisi dolor aute tempor laboris consequat.\r\n",
+        "Aute nisi amet consectetur voluptate adipisicing deserunt ea nisi cupidatat commodo amet anim reprehenderit sunt. Cillum aliquip cupidatat culpa reprehenderit velit pariatur cupidatat quis sunt mollit. Irure eiusmod ex eu tempor. Consectetur fugiat nisi Lorem irure labore incididunt exercitation do. Est proident exercitation eu dolore ipsum quis. Quis adipisicing veniam eu nisi. Magna labore consequat sit ut nulla enim tempor exercitation ex proident duis.\r\n"
+      ]
+    },
+    {
+      "name": "Avery Wagner",
+      "job": "CEO of TheCodex.me ",
+      "rate": 3.1548,
+      "reviews_num": 2341,
+      "students_num": 67457,
+      "courses_num": 6,
+      "bio": [
+        "In mollit ipsum aute tempor do ullamco nisi. Qui minim cupidatat consequat est deserunt irure fugiat do fugiat aliqua. Lorem ea dolore ea veniam tempor adipisicing. Dolor velit veniam Lorem do aliqua in Lorem non. Anim fugiat id dolore occaecat consectetur consectetur excepteur eu sint nisi aute quis.\r\n",
+        "Dolore nisi Lorem laboris voluptate ea do culpa do. Irure amet sunt ipsum proident laboris eu adipisicing. Quis cupidatat consequat mollit nulla anim do duis occaecat. Ipsum cupidatat aliqua fugiat amet tempor et mollit magna elit Lorem esse et id. Duis sint duis proident aute aliquip id eu. Ea esse sunt et et ex laborum cupidatat dolore aute et dolore aliqua amet culpa. Qui Lorem ex voluptate nisi proident aliqua non sit amet.\r\n",
+        "Magna excepteur eiusmod fugiat sit commodo proident duis aute laborum commodo voluptate. Occaecat magna reprehenderit officia esse sunt officia et tempor dolor quis qui aliqua commodo ex. Culpa duis dolore excepteur fugiat. Amet cillum quis veniam duis velit excepteur ad incididunt. Incididunt elit duis aute aliqua. Elit est consequat consectetur magna labore ipsum Lorem officia sunt cillum consectetur id cillum.\r\n"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "Becker",
+      "createAt": "2022-05-17T09:21:58 -02:00",
+      "rate": 4.3187,
+      "review_text": "Cillum sunt dolor consequat nulla anim irure magna amet. Nostrud nostrud velit magna proident id irure anim irure duis incididunt. Velit non mollit qui aliqua veniam ad cillum reprehenderit Lorem Lorem consequat labore laboris irure.\r\n",
+      "helpful": true
+    }
+  ]
+}
