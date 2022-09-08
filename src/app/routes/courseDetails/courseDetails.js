@@ -5,6 +5,10 @@ import TopContainer from "./components/topContainer";
 
 import course from "../../../data/course.json";
 import NavShortcutSection from "./components/navShortcutSection";
+import WhatLearnComponent from "./components/whatLearn";
+
+import styles from "./courseDetails.module.css";
+import ExpansionCourseContent from './components/expansionCourseContent';
 
 function CourseDetails() {
   // const location = useLocation();
@@ -12,15 +16,18 @@ function CourseDetails() {
 
   return (
     <CourseProvider value={course}>
-        <main>
+      <main>
         {/* top container */}
         <TopContainer />
-
-        {/* sidebar container introduction */}
-        {/* sidebar container purchase */}
-        {/* navigation btns*/}
-        <NavShortcutSection />
-        {/* what you will learn */}
+          {/* navigation btns*/}
+          <NavShortcutSection />
+        <div className={styles.centerContainer}>
+          {/* sidebar container introduction */}
+          {/* sidebar container purchase */}
+          {/* what you will learn */}
+          {/* <WhatLearnComponent /> */}
+          <ExpansionCourseContent />
+        </div>
       </main>
     </CourseProvider>
   );

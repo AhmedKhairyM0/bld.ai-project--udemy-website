@@ -9,6 +9,11 @@ react-accessible-accordion
 fontawesome
 json-server
 moment -> reformat date
+material ui
+material icons
+
+delete 
+expansion panel
 
 
 ## Available Scripts

@@ -1,0 +1,26 @@
+.courseContentItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lessonCourse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lessonCourseSpace {
+  width: 20%;
+}
+
+.lessonCourse a {
+  text-decoration: none;
+  color: black;
+}
+
+.playCourseIcon {
+  font-size: 0.1rem;
+  margin-right: 0.5rem;
+}

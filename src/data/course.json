@@ -1,155 +1,122 @@
 {
-  "id": "6319ddf5d0576a9bf644c681",
-  "title": "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
-  "category": "Web Development",
-  "subtitle": "in est tempor laborum nisi elit fugiat Lorem aliqua anim tempor pariatur enim culpa ea incididunt reprehenderit sit aliqua in",
-  "rate_stars": 3.5943,
-  "rate_num": 6569,
-  "students_num": 36412,
-  "update_date": "2022-02-02T04:46:39-02:00",
+  "id": "631a4b53cb58f9a86fd42fd3",
+  "title": "Web Development",
+  "category": "Mobile Development",
+  "subtitle": "Laboris duis Lorem proident ex in sint quis do aliquip duis. Consectetur esse eiusmod adipisicing cupidatat proident eu in occaecat ipsum nulla. Est cillum laboris mollit reprehenderit sunt. Officia anim laborum velit labore duis cupidatat in ex enim dolor velit magna consectetur consectetur.\r\n",
+  "rate_stars": 3.0321,
+  "rate_num": 8042,
+  "students_num": 97670,
+  "update_date": "2022-05-15T02:58:50-02:00",
   "content_lang": "Indian",
-  "caption_lang": "English",
+  "caption_lang": "Arabic",
   "what_learn": [
-    "est ullamco ex mollit eu",
-    "deserunt qui commodo deserunt minim",
-    "consequat occaecat cupidatat adipisicing duis"
+    "sint nisi labore adipisicing minim",
+    "aliquip veniam culpa consectetur in",
+    "dolore mollit et do labore"
   ],
-  "includes": [
-    "42 hours on-demand video",
-    "2 article",
-    "2 downloadable resources",
-    "Full lifetime access",
-    "Access on mobile and TV",
-    "Certificate of completion"
-  ],
+  "includes": {
+    "total_time_estimate": "40 hours on-demand video",
+    "articles_num": "2 articles",
+    "featues": "Certificate of completion"
+  },
   "content": [
     {
       "lecture": {
-        "title": "Data Analysis with Pandas!",
-        "total_estimate_time": 35,
-        "lesons": [
+        "id": "631a4b530a4760168a809295",
+        "title": "Python GUI with Tkinter",
+        "total_estimate_time": 45,
+        "lessons": [
           {
-            "title": "Pass, Break and Continue",
-            "estimate_time": 7,
-            "is_preview": true
-          },
-          {
-            "title": "Data Frames Intro",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Message Box",
-            "estimate_time": 8,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Our First Game (Bounce!)",
-        "total_estimate_time": 36,
-        "lesons": [
-          {
-            "title": "Fill",
-            "estimate_time": 6,
-            "is_preview": true
-          },
-          {
-            "title": "Fill",
-            "estimate_time": 5,
-            "is_preview": true
-          },
-          {
-            "title": "Adding a Legend",
-            "estimate_time": 5,
-            "is_preview": true
-          },
-          {
-            "title": "Exercise Files",
-            "estimate_time": 8,
-            "is_preview": true
-          },
-          {
-            "title": "Creating our Ball",
-            "estimate_time": 8,
-            "is_preview": false
-          },
-          {
-            "title": "Sys Module",
-            "estimate_time": 9,
-            "is_preview": true
-          },
-          {
-            "title": "Adding Paddle1",
-            "estimate_time": 10,
-            "is_preview": false
-          },
-          {
-            "title": "Inheritance",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Exercise Files",
-            "estimate_time": 10,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Classes! (Object Orientated Programming)",
-        "total_estimate_time": 50,
-        "lesons": [
-          {
-            "title": "GroupBy Function",
-            "estimate_time": 5,
-            "is_preview": false
-          },
-          {
-            "title": "Random Module - Shuffle and Choice",
+            "id": "631a4b5380621517c31a6a02",
+            "title": "Installing the Beautiful Soup Module",
             "estimate_time": 6,
             "is_preview": false
           },
           {
-            "title": "Adding the Paddle",
-            "estimate_time": 7,
-            "is_preview": true
+            "id": "631a4b538524b2ed488438dd",
+            "title": "First Graph!",
+            "estimate_time": 10,
+            "is_preview": false
           },
           {
-            "title": "Dictionary Functions",
+            "id": "631a4b53abf0949c4deb9204",
+            "title": "GUI Login",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b53f88fcb60175f7e91",
+            "title": "Multiple Assignment",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b533ad61de482aec72b",
+            "title": "3D Scatter Plots",
             "estimate_time": 5,
-            "is_preview": true
+            "is_preview": false
           },
           {
-            "title": "Data Manipulation",
-            "estimate_time": 7,
-            "is_preview": true
+            "id": "631a4b53620c51f5c7172724",
+            "title": "Relational Operators",
+            "estimate_time": 10,
+            "is_preview": false
           }
         ]
       }
     },
     {
       "lecture": {
-        "title": "The Basics (Data Types)",
-        "total_estimate_time": 30,
-        "lesons": [
+        "id": "631a4b535b17e84d842555c2",
+        "title": "Beautiful Soup HTML Parsing",
+        "total_estimate_time": 32,
+        "lessons": [
           {
-            "title": "Hello World",
+            "id": "631a4b5348ec9483aec5fde0",
+            "title": "Multiple Graphs in a Figure",
             "estimate_time": 8,
             "is_preview": true
           },
           {
+            "id": "631a4b53efc765a5541fef8b",
+            "title": "Global and Local Vars",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b53e33866366a9f197b",
             "title": "Time Module",
             "estimate_time": 8,
             "is_preview": true
           },
           {
-            "title": "Tkinter Introduction",
+            "id": "631a4b53304ad0983da16ea7",
+            "title": "Adding the Paddle",
             "estimate_time": 5,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b539d039303e70a9a69",
+            "title": "Bounce! (.py) (v1/v2/v3)",
+            "estimate_time": 5,
+            "is_preview": true
+          },
+          {
+            "id": "631a4b539c9aa7a4a22153a0",
+            "title": "Calculator Part 3",
+            "estimate_time": 5,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b53b075acd4f2e58013",
+            "title": "Layouts",
+            "estimate_time": 8,
+            "is_preview": true
+          },
+          {
+            "id": "631a4b5321e4e9c24ee462c3",
+            "title": "Bar Graphs Intro",
+            "estimate_time": 9,
             "is_preview": false
           }
         ]
@@ -157,70 +124,20 @@
     },
     {
       "lecture": {
-        "title": "Up and Running With Python",
-        "total_estimate_time": 27,
-        "lesons": [
+        "id": "631a4b53a825f32184139cbf",
+        "title": "Functions!",
+        "total_estimate_time": 50,
+        "lessons": [
           {
-            "title": "Overriding Methods",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Functions in Soup",
-            "estimate_time": 10,
-            "is_preview": false
-          },
-          {
-            "title": "Crawling The Web (Weather)",
-            "estimate_time": 8,
-            "is_preview": true
-          },
-          {
+            "id": "631a4b53aa42ea5fa62a9658",
             "title": "Adding the Game Interface",
-            "estimate_time": 6,
-            "is_preview": false
+            "estimate_time": 5,
+            "is_preview": true
           },
           {
+            "id": "631a4b53b5863450f5a61909",
             "title": "Random Module - Randint",
-            "estimate_time": 5,
-            "is_preview": false
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Using Python Modules",
-        "total_estimate_time": 40,
-        "lesons": [
-          {
-            "title": "Tuples",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Adding Paddle1",
-            "estimate_time": 6,
-            "is_preview": false
-          },
-          {
-            "title": "Understanding SubPlots and Figures",
             "estimate_time": 7,
-            "is_preview": true
-          },
-          {
-            "title": "Commenting",
-            "estimate_time": 8,
-            "is_preview": true
-          },
-          {
-            "title": "Creating a File (Windows)",
-            "estimate_time": 8,
-            "is_preview": false
-          },
-          {
-            "title": "Intro to MatPlotLib",
-            "estimate_time": 5,
             "is_preview": true
           }
         ]
@@ -228,238 +145,54 @@
     },
     {
       "lecture": {
-        "title": "MatPlotLib - Charts, Plots and 3D Figures!",
-        "total_estimate_time": 34,
-        "lesons": [
+        "id": "631a4b53408e3dee441f3acf",
+        "title": "Our Second Game (Pong!)",
+        "total_estimate_time": 43,
+        "lessons": [
           {
-            "title": "Drilling Down",
-            "estimate_time": 7,
+            "id": "631a4b5347f400cec391b44e",
+            "title": "Random Module - Shuffle and Choice",
+            "estimate_time": 9,
             "is_preview": true
           },
           {
-            "title": "Functions in Soup",
-            "estimate_time": 9,
+            "id": "631a4b5353758e3e278e77ac",
+            "title": "Data Manipulation",
+            "estimate_time": 8,
             "is_preview": false
           },
           {
-            "title": "Hello World",
-            "estimate_time": 7,
-            "is_preview": true
+            "id": "631a4b53988327c64b2c8e2f",
+            "title": "Elif Statements",
+            "estimate_time": 9,
+            "is_preview": false
+          }
+        ]
+      }
+    },
+    {
+      "lecture": {
+        "id": "631a4b538f5e88df6f1254eb",
+        "title": "The Basics (Data Types)",
+        "total_estimate_time": 23,
+        "lessons": [
+          {
+            "id": "631a4b5390606d9bb6c68e06",
+            "title": "Re Module",
+            "estimate_time": 8,
+            "is_preview": false
           },
           {
+            "id": "631a4b5309ac9a8b2bde92cf",
+            "title": "Recap",
+            "estimate_time": 10,
+            "is_preview": false
+          },
+          {
+            "id": "631a4b530041e2cfbd6d0688",
             "title": "Up and Beyond!",
             "estimate_time": 8,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Our Second Game (Pong!)",
-        "total_estimate_time": 21,
-        "lesons": [
-          {
-            "title": "Help and Dir",
-            "estimate_time": 8,
             "is_preview": false
-          },
-          {
-            "title": "Getting our Data",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Global and Local Vars",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Slicing Data Frames",
-            "estimate_time": 6,
-            "is_preview": false
-          },
-          {
-            "title": "Random Rectangle Generator",
-            "estimate_time": 6,
-            "is_preview": true
-          },
-          {
-            "title": "Data Manipulation",
-            "estimate_time": 6,
-            "is_preview": false
-          },
-          {
-            "title": "Series Data Structure",
-            "estimate_time": 6,
-            "is_preview": false
-          },
-          {
-            "title": "3D Scatter Plots",
-            "estimate_time": 9,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Our First Game (Bounce!)",
-        "total_estimate_time": 25,
-        "lesons": [
-          {
-            "title": "If-Else Statements",
-            "estimate_time": 8,
-            "is_preview": false
-          },
-          {
-            "title": "Final Touches",
-            "estimate_time": 6,
-            "is_preview": false
-          },
-          {
-            "title": "Adding a Legend",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Inheritance",
-            "estimate_time": 5,
-            "is_preview": true
-          },
-          {
-            "title": "More Binding!",
-            "estimate_time": 6,
-            "is_preview": true
-          },
-          {
-            "title": "Adding Paddle2",
-            "estimate_time": 5,
-            "is_preview": false
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Crawling The Web",
-        "total_estimate_time": 39,
-        "lesons": [
-          {
-            "title": "Coloring of Graph",
-            "estimate_time": 6,
-            "is_preview": true
-          },
-          {
-            "title": "Crawling The Web (Stocks)",
-            "estimate_time": 10,
-            "is_preview": false
-          },
-          {
-            "title": "Pong! (.py)",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Sys Module",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Creating our Ball",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Series Continuation",
-            "estimate_time": 10,
-            "is_preview": true
-          },
-          {
-            "title": "Try and Except",
-            "estimate_time": 6,
-            "is_preview": true
-          },
-          {
-            "title": "Labels",
-            "estimate_time": 7,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "Data Analysis with Pandas!",
-        "total_estimate_time": 38,
-        "lesons": [
-          {
-            "title": "Definition (.py)",
-            "estimate_time": 10,
-            "is_preview": false
-          },
-          {
-            "title": "Guessing Game Challenge",
-            "estimate_time": 5,
-            "is_preview": false
-          },
-          {
-            "title": "Exercise Files",
-            "estimate_time": 10,
-            "is_preview": true
-          }
-        ]
-      }
-    },
-    {
-      "lecture": {
-        "title": "MatPlotLib - Charts, Plots and 3D Figures!",
-        "total_estimate_time": 29,
-        "lesons": [
-          {
-            "title": "Placeholders",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Understanding SubPlots and Figures",
-            "estimate_time": 7,
-            "is_preview": false
-          },
-          {
-            "title": "Quick Tips",
-            "estimate_time": 8,
-            "is_preview": true
-          },
-          {
-            "title": "Writing to a File",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "Adding the Paddle",
-            "estimate_time": 9,
-            "is_preview": false
-          },
-          {
-            "title": "MatPlotLib with Pandas",
-            "estimate_time": 7,
-            "is_preview": false
-          },
-          {
-            "title": "Dictionaries",
-            "estimate_time": 7,
-            "is_preview": false
-          },
-          {
-            "title": "Getting our Data",
-            "estimate_time": 5,
-            "is_preview": false
-          },
-          {
-            "title": "Inheritance",
-            "estimate_time": 5,
-            "is_preview": true
           }
         ]
       }
@@ -467,26 +200,82 @@
   ],
   "instructors": [
     {
-      "name": "Dionne Tran",
-      "job": "CEO of TheCodex.me ",
-      "rate": 3.4687,
-      "reviews_num": 4055,
-      "students_num": 60808,
-      "courses_num": 6,
+      "id": "631a4b5330399468970ca5be",
+      "name": "Mollie Larson",
+      "job": "Developer and Lead Instructor",
+      "rate": 3.2533,
+      "reviews_num": 9523,
+      "students_num": 48185,
+      "courses_num": 3,
       "bio": [
-        "Ad incididunt proident mollit dolore ad duis velit Lorem. Cillum adipisicing incididunt id tempor occaecat laborum elit mollit dolor Lorem. Sint cillum voluptate excepteur quis labore do commodo ipsum consectetur voluptate enim anim. Enim in laboris enim esse veniam velit reprehenderit nisi eu aliquip. Cillum incididunt minim velit adipisicing amet aliquip eiusmod tempor excepteur quis culpa. Velit consequat labore pariatur deserunt sit ullamco ex cillum cillum laboris elit. Ea ipsum nostrud tempor aute do ut ex irure ipsum.\r\n",
-        "Exercitation ipsum ipsum deserunt mollit in cupidatat. Occaecat eiusmod nostrud aliquip sint aliqua mollit labore ad sint labore tempor sit. Ex et elit Lorem consectetur.\r\n",
-        "Et dolor ea reprehenderit pariatur nisi eu esse commodo culpa ex. Voluptate ipsum velit deserunt ipsum cupidatat mollit. Commodo cupidatat non eu tempor velit irure laboris velit pariatur mollit ex reprehenderit do. Eiusmod ad magna laborum pariatur. Aute commodo aliqua officia ullamco esse aliquip in cillum reprehenderit qui. Incididunt ullamco esse ea nulla incididunt mollit occaecat pariatur ea commodo Lorem excepteur magna.\r\n"
+        "Aute est incididunt excepteur voluptate consectetur cupidatat voluptate exercitation amet. Amet proident proident pariatur eiusmod excepteur anim velit adipisicing consequat ut. Cillum dolore occaecat mollit sint. Incididunt magna officia qui in cupidatat excepteur eiusmod.\r\n",
+        "Veniam laborum labore eu id ex occaecat aliqua nostrud enim irure ut. Irure nisi laborum amet quis minim mollit aliquip excepteur laborum nulla occaecat minim. Consectetur nostrud ex in magna laboris eiusmod fugiat. Do cupidatat nulla ea est duis voluptate reprehenderit id enim. Tempor officia consequat qui aliqua exercitation proident sunt enim aliqua aliqua sunt culpa id commodo. Esse tempor consectetur Lorem officia pariatur fugiat laborum eu adipisicing exercitation amet sit nulla ullamco.\r\n",
+        "Dolor voluptate eiusmod et nostrud commodo voluptate aliqua. Amet quis duis dolore commodo quis. Adipisicing laboris Lorem irure non velit amet duis eiusmod pariatur duis. Irure exercitation elit reprehenderit aute proident proident eu anim minim id excepteur. Nostrud magna in ut esse officia quis eu et qui ipsum est minim ullamco eu. Irure aute occaecat dolore voluptate veniam minim.\r\n"
+      ]
+    },
+    {
+      "id": "631a4b530eb7e219b1b62695",
+      "name": "Kellie Duke",
+      "job": "Head of Data Science at Pierian Training",
+      "rate": 3.2699,
+      "reviews_num": 5813,
+      "students_num": 52319,
+      "courses_num": 7,
+      "bio": [
+        "Eu labore cillum incididunt est pariatur cillum minim elit. Ea eu aliquip dolore voluptate. Ut magna amet nulla ullamco cupidatat voluptate consectetur eu amet ex velit.\r\n",
+        "Ea aliquip labore tempor fugiat ea. Adipisicing dolor irure tempor adipisicing nisi voluptate deserunt elit adipisicing ullamco. Nostrud ipsum eiusmod pariatur duis elit irure ex occaecat dolore eiusmod. Ipsum minim incididunt in Lorem ex laboris do quis commodo est velit ipsum.\r\n",
+        "Id anim amet fugiat labore elit sunt ex ullamco ullamco Lorem dolore ullamco nulla reprehenderit. Consectetur enim culpa amet velit minim pariatur sunt et elit ut non anim. Ut tempor id nulla elit proident esse. Ipsum ut amet ut sit ullamco et sunt reprehenderit.\r\n"
       ]
     }
   ],
   "reviews": [
     {
-      "reviewer": "Short",
-      "createAt": "2022-06-22T10:13:35 -02:00",
-      "rate": 4.2727,
-      "review_text": "Amet aliquip culpa pariatur nulla. Ullamco dolore ut cillum laboris ex non ex tempor Lorem nisi excepteur culpa aliqua. Ut culpa elit aliquip aute proident Lorem. Deserunt Lorem eu officia non elit. Do mollit pariatur sit officia voluptate. Labore magna ullamco pariatur sit voluptate. Eiusmod excepteur culpa dolore ipsum fugiat nulla pariatur incididunt excepteur elit est ipsum.\r\n",
-      "helpful": false
+      "id": "631a4b53f2c21300a995477d",
+      "reviewer": "Mejia",
+      "createAt": "2022-06-01T05:50:36 -02:00",
+      "rate": 4.4752,
+      "review_text": "Ex consectetur occaecat ad elit nostrud nostrud ipsum tempor excepteur nostrud. Sint deserunt tempor ea nisi culpa dolore amet reprehenderit sit aliqua. Proident occaecat cillum excepteur proident officia esse ipsum adipisicing. Occaecat duis in id incididunt.\r\n",
+      "helpful": null
+    },
+    {
+      "id": "631a4b5358bdfdab041683da",
+      "reviewer": "Riley",
+      "createAt": "2022-08-13T08:24:51 -02:00",
+      "rate": 3.2745,
+      "review_text": "Proident aute deserunt aliqua laboris consectetur non nisi esse ullamco. Amet occaecat qui id commodo duis magna. Fugiat pariatur ad ex aliquip ipsum minim ullamco mollit dolor aliqua tempor.\r\n",
+      "helpful": true
+    },
+    {
+      "id": "631a4b536f4448afbb004910",
+      "reviewer": "Thomas",
+      "createAt": "2022-05-09T10:55:06 -02:00",
+      "rate": 4.6643,
+      "review_text": "Reprehenderit culpa consectetur sunt irure pariatur id officia excepteur consequat exercitation id est consectetur. Mollit sunt id nostrud voluptate commodo. Aliqua ea amet cillum ex in.\r\n",
+      "helpful": null
+    },
+    {
+      "id": "631a4b532acc9d48de520d29",
+      "reviewer": "Hopkins",
+      "createAt": "2022-02-06T11:23:00 -02:00",
+      "rate": 4.4863,
+      "review_text": "Sint enim mollit consectetur aute est. Sunt cillum velit sint consectetur voluptate exercitation elit excepteur amet. Dolor aliqua dolor quis laboris proident qui quis ad est cupidatat in id duis.\r\n",
+      "helpful": true
+    },
+    {
+      "id": "631a4b53e611ac55715c0c62",
+      "reviewer": "Campbell",
+      "createAt": "2022-07-29T11:35:39 -02:00",
+      "rate": 4.1098,
+      "review_text": "Amet eiusmod laborum adipisicing id magna duis nisi dolor incididunt id. Ad cillum consequat exercitation tempor do ea deserunt. Irure duis ea ea laboris tempor sint minim velit culpa sint occaecat eu. Commodo deserunt ipsum adipisicing exercitation minim est excepteur eu mollit duis sunt cupidatat. Fugiat laborum sint anim minim nostrud non ullamco nisi.\r\n",
+      "helpful": true
+    },
+    {
+      "id": "631a4b53f2b71cc65d9d36e0",
+      "reviewer": "Diaz",
+      "createAt": "2022-07-21T06:55:40 -02:00",
+      "rate": 3.7252,
+      "review_text": "Commodo proident in sint eu aliquip Lorem. Quis ad officia consectetur cillum in deserunt ea est quis labore esse. Nisi sit excepteur duis eiusmod mollit consequat proident exercitation id et Lorem. Reprehenderit sint do qui ad officia reprehenderit aliquip voluptate nisi ut voluptate cillum proident nulla. Qui ut nisi dolor cillum ipsum.\r\n",
+      "helpful": true
     }
   ]
 }
