@@ -7,7 +7,7 @@ import styles from "./courseCard.module.css";
 function CourseCard({ course }) {
   return (
     <Link
-      to='course/1'
+      to={`course/${course.title.toLowerCase().replaceAll(/[ :]/g,'-')}`}
       state={course}
     >
       <div className={styles.courseCard}>

@@ -1,16 +1,18 @@
 import React, { useContext } from "react";
+import globalStyles from "../courseDetails.module.css";
 import styles from "./topContainer.module.css";
 import { CourseRating } from "../../home/components/courseCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { CourseContext } from "../../../contexts/coursesContext";
+import moment from 'moment';
 
 function TopContainer() {
   const course = useContext(CourseContext);
 
   return (
-    <section className={`${styles.darkContainer} ${styles.paddingContainer}`}>
-      <div className={styles.centerContainer}>
+    <section className={`${globalStyles.darkContainer} ${globalStyles.paddingContainer}`}>
+      <div className={globalStyles.centerContainer}>
         {/* course image */}
         <div className={styles.category}>{course.category}</div>
         <h1 className={styles.titleCourse}>{course.title}</h1>
@@ -26,10 +28,10 @@ function TopContainer() {
           Created by{" "}
           {course.instructors.map((instructor, index) => <a href={`#instructor-${index+1}`}>{instructor.name}, </a>)}
         </div>
-        <div className={styles.flexContainer}>
+        <div className={globalStyles.flexContainer}>
           <IconLabeledComponent
             faIcon={faGlobe}
-            label={`Last updated ${course.update_date}`}
+            label={`Last updated ${moment(course.update_date).format('YYYY-MM')}`}
           />
           <IconLabeledComponent faIcon={faGlobe} label={course.content_lang} />
           <IconLabeledComponent faIcon={faGlobe} label={course.caption_lang} />

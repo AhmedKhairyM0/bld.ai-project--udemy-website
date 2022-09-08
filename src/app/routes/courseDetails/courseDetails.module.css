@@ -1,0 +1,18 @@
+.darkContainer {
+    background-color: #1c1d1f;
+    color: white;
+  }
+  
+  .centerContainer {
+    width: 40%;
+    margin: 0 40% 0 20%;
+  }
+  
+  .paddingContainer {
+    padding: 2.2rem 0;
+  }
+  
+  .flexContainer {
+    display: flex;
+  }
+  

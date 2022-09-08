@@ -8,6 +8,7 @@ react-router-dom
 react-accessible-accordion
 fontawesome
 json-server
+moment -> reformat date
 
 
 ## Available Scripts
