@@ -1,0 +1,53 @@
+.root {
+  margin: 12px 0;
+  min-height: 100px;
+  padding: 4px;
+  width: 600px;
+}
+
+.root .textDisplay {
+  font-size: 16px;
+  line-height: 18px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.root .btnToggle {
+  margin-top: 4px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #5624d0;
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+
+}
+
+.root .textDisplay.collapsed {
+  /* animation: mask-collapsing 0.5s; */
+  mask-image: linear-gradient(black 50%, transparent);
+}
+
+.root .textDisplay.expanded {
+  /* animation: mask-expanding 0.5s; */
+  mask-image: linear-gradient(black 100%, transparent);
+}
+
+/* @keyframes mask-collapsing {
+  from {
+    mask-image: linear-gradient(black 100%, transparent);
+  }
+  to {
+    mask-image: linear-gradient(black 50%, transparent);
+  }
+}
+
+@keyframes mask-expanding {
+  from {
+    mask-image: linear-gradient(black 50%, transparent);
+  }
+  to {
+    mask-image: linear-gradient(black 100%, transparent);
+  }
+} */

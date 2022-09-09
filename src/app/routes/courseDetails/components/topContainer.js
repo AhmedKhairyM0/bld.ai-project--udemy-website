@@ -2,10 +2,14 @@ import React, { useContext } from "react";
 import globalStyles from "../courseDetails.module.css";
 import styles from "./topContainer.module.css";
 import { CourseRating } from "../../home/components/courseCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faGlobe, faClosedCaptioning } from "@fortawesome/free-solid-svg-icons";
 import { CourseContext } from "../../../contexts/coursesContext";
 import moment from 'moment';
+import IconLabeledComponent from '../../../common/iconLabeledComponent';
+
+import ClosedCaptionIcon from '@mui/icons-material/ClosedCaption';
+import LanguageIcon from '@mui/icons-material/Language';
+import WatchLaterIcon from '@mui/icons-material/WatchLater';
+
 
 function TopContainer() {
   const course = useContext(CourseContext);
@@ -26,15 +30,15 @@ function TopContainer() {
         </div>
         <div className={styles.instructor}>
           Created by{" "}
-          {course.instructors.map((instructor, index) => <a href={`#instructor-${index+1}`} key={`instructor-${index+1}`}>{instructor.name}, </a>)}
+          {course.instructors.map((instructor, index) => <a href={`#instructor-${index+1}`} key={instructor.id}>{instructor.name}, </a>)}
         </div>
         <div className={globalStyles.flexContainer}>
           <IconLabeledComponent
-            faIcon={faClock}
+            icon={<WatchLaterIcon />}
             label={`Last updated ${moment(course.update_date).format('YYYY-MM')}`}
           />
-          <IconLabeledComponent faIcon={faGlobe} label={course.content_lang} />
-          <IconLabeledComponent faIcon={faClosedCaptioning} label={course.caption_lang} />
+          <IconLabeledComponent icon={<LanguageIcon />} label={course.content_lang} />
+          <IconLabeledComponent icon={<ClosedCaptionIcon />} label={course.caption_lang} />
         </div>
         {/*  */}
       </div>
@@ -42,13 +46,5 @@ function TopContainer() {
   );
 }
 
-function IconLabeledComponent({ faIcon, label }) {
-  return (
-    <div className={styles.iconLabel}>
-      <FontAwesomeIcon icon={faIcon} />
-      <span> {label}</span>
-    </div>
-  );
-}
 
 export default TopContainer;

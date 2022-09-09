@@ -1,0 +1,10 @@
+.iconLabel {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.iconLabel p {
+font-size: 0.9rem;
+  margin-left: 0.5rem;
+}

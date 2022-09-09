@@ -9,6 +9,10 @@ import WhatLearnComponent from "./components/whatLearn";
 
 import styles from "./courseDetails.module.css";
 import ExpansionCourseContent from './components/expansionCourseContent';
+import RequirementsComponent from "./components/requirementsComponent";
+import DescriptionComponent from "./components/descriptionComponent";
+import InstructorsComponent from "./components/instructorComponent";
+import ReviewsComponent from "./components/reviewComponent";
 
 function CourseDetails() {
   // const location = useLocation();
@@ -20,13 +24,18 @@ function CourseDetails() {
         {/* top container */}
         <TopContainer />
           {/* navigation btns*/}
-          <NavShortcutSection />
+          {/* <NavShortcutSection /> */}
         <div className={styles.centerContainer}>
           {/* sidebar container introduction */}
           {/* sidebar container purchase */}
           {/* what you will learn */}
           {/* <WhatLearnComponent /> */}
           <ExpansionCourseContent />
+          <RequirementsComponent />
+          <DescriptionComponent />
+          <InstructorsComponent />
+          <ReviewsComponent />
+
         </div>
       </main>
     </CourseProvider>
