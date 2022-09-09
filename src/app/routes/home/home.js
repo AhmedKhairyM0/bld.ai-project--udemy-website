@@ -4,42 +4,41 @@ import LoadingSpinner from "../../common/loadingSpinner";
 import CoursesTabContent from "./components/coursesTabContent";
 
 function Home() {
+  const [isloading, setIsLoading] = useState(false);
+  const [data, setData] = useState("");
+  const [error, setError] = useState("");
 
-  const [response, setResponse] = useState({
-    isLoading: false,
-    data: "",
-    error: "",
-  });
 
   useEffect(() => {
-    setResponse({ ...response, isLoading: true });
-    fetch("http://localhost:3001/tabs")
+    setIsLoading(true);
+    setError("");
+    fetch("http://localhost:3001/courses")
       .then((response) => response.json())
       .then((result) => {
-        setResponse({ ...response, isLoading: false, data: result });
-        console.log("response", response);
+
+        setIsLoading(false);
+        setData(result);
+
       })
       .catch((err) => {
         console.log("err:::", err);
-        setResponse({
-          ...response,
-          isLoading: false,
-          error: "Something is wrong",
-        });
-        console.log("response", response);
+        setIsLoading(false);
+        setError(err);
+
       });
   }, []);
 
   const displayData = () => {
-    if (response.error) {
+    if (error) {
       // navigate to error route with msg as props
       return <div>Error message</div>;
     }
-    if (response.data) {
+    if (data !== "") {
+      console.log('data', data)
       return (
         <main>
           {/* <WallpaperCarouselSlider /> */}
-          <CoursesTabContent coursesTab={response.data[0]} />
+          <CoursesTabContent coursesTab={data} />
         </main>
       );
     }

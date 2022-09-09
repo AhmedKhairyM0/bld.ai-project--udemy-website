@@ -1,3 +1,4 @@
+import { NumbersOutlined } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
 import ReactStars from "react-stars";
@@ -9,6 +10,7 @@ function CourseCard({ course }) {
     <Link
       to={`course/${course.title.toLowerCase().replaceAll(/[ :]/g,'-')}`}
       state={course}
+      className={styles.courseLink}
     >
       <div className={styles.courseCard}>
         {/* <a href={course.link}> */}
@@ -16,13 +18,13 @@ function CourseCard({ course }) {
         <div className={styles.courseTitle}>
           <h3>{course.title}</h3>
         </div>
-        <div className={styles.courseInstructor}>{course.instructor}</div>
-        <CourseRating stars={course.stars} views={course.views} />
+        <div className={styles.courseInstructor}>{course.instructors.map((inst)=> inst.name.split(' ')[0]).join(', ')}</div>
+        <CourseRating stars={Number(course.rate_stars.toFixed(1))} views={course.students_num} />
         <div>
           <span className={styles.coursePrice}>{course.price}</span>
           <span className={styles.courseOldPrice}>{course.old_price}</span>
         </div>
-        {course.bestSeller ? (
+        {course.best_seller ? (
           <div className={styles.courseBestseller}>Bestseller</div>
         ) : null}
         {/* </a> */}

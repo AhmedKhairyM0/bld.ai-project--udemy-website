@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CourseRating } from "../../home/components/courseCard";
 import styles from "./reviewComponent.module.css";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
+import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import moment from "moment";
 import { CourseContext } from "../../../contexts/coursesContext";
 
@@ -49,6 +51,28 @@ function ReviewsComponent() {
 
 function ReviewComponent({ review }) {
   const { id, reviewer, createAt, rate, review_text, helpful } = review;
+
+  const [like, setLike] = useState(helpful);
+  const [dislike, setDislike] = useState(!helpful);
+
+  const handleLikeAction = () => {
+    if (like === true) {
+      setLike(false);
+    } else {
+      setLike(true);
+      if (dislike === true) setDislike(false);
+    }
+  };
+  
+  const handleDislikeAction = () => {
+    if (dislike === true) {
+      setDislike(false);
+    } else {
+      setDislike(true);
+      if (like === true) setLike(false);
+    }
+  };
+
   return (
     <div className={styles.review}>
       <div className={styles.div1}>
@@ -67,8 +91,20 @@ function ReviewComponent({ review }) {
         <Typography>{review_text}</Typography>
         <Typography>Was this review helpful?</Typography>
         <div className={styles.reviewActionsSection}>
-          <CircleButton icon={<ThumbUpOutlinedIcon />} />
-          <CircleButton icon={<ThumbDownOutlinedIcon />} />
+          <button
+            onClick={handleLikeAction}
+            className={`${styles.circle} ${styles.smCircle} ${styles.btn}`}
+          >
+            {like ? <ThumbUpIcon /> : <ThumbUpOutlinedIcon />}
+          </button>
+          <button
+            onClick={handleDislikeAction}
+            className={`${styles.circle} ${styles.smCircle} ${styles.btn}`}
+          >
+            {dislike ? <ThumbDownIcon /> : <ThumbDownOutlinedIcon />}
+          </button>
+          {/* <CircleButton icon={<ThumbUpOutlinedIcon />} />
+          <CircleButton icon={<ThumbDownOutlinedIcon />} /> */}
           <a href="#">Report</a>
         </div>
       </div>

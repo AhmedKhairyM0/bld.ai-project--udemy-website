@@ -1,26 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faCartShopping, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faCartShopping,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./navBar.module.css";
 
 import logo from "../../assets/images/logo-udemy.svg";
 
 function NavBar() {
+  const inputRef = useRef();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSearchParams({ search: inputRef.current.value });
+  };
+
   return (
     <nav>
-      <Link to="/" >
+      <Link to="/">
         <img src={logo} alt={"Udemy Logo"} className={styles.websiteLogo} />
       </Link>
       <span className={styles.navItem}>Categories</span>
-      <span className={styles.searchBar}>
-        <button className={styles.searchBtn}>
+      <form className={styles.searchBar}>
+        <button
+          className={styles.searchBtn}
+          onClick={handleSubmit}
+          type="sumbit"
+        >
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
-        <input name="search" placeholder="Search for anything..." />
-      </span>
+        <input
+          ref={inputRef}
+          name="search"
+          placeholder="Search for anything..."
+          onSumbit={handleSubmit}
+        />
+      </form>
       <span>
         <span className={styles.navItem}>Udemy Business</span>
         <span className={styles.navItem}>Tech on Udemy</span>
