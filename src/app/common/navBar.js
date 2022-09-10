@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useParams,
+  useSearchParams,
+} from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,11 +21,22 @@ import logo from "../../assets/images/logo-udemy.svg";
 function NavBar() {
   const inputRef = useRef();
   const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSearchParams({ search: inputRef.current.value });
+    if(inputRef.current.value !== "")
+    navigate(`/?search=${inputRef.current.value}`);
   };
+
+  useEffect(()=>{
+    console.log('searchParams', searchParams)
+    if(!searchParams.get("search") && inputRef.current.value) {
+      searchParams.delete("search");
+      inputRef.current.value = "";
+    } 
+  })
 
   return (
     <nav>
