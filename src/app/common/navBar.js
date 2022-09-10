@@ -26,17 +26,21 @@ function NavBar() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(inputRef.current.value !== "")
-    navigate(`/?search=${inputRef.current.value}`);
+    if (inputRef.current.value !== "")
+      navigate(`/?search=${inputRef.current.value}`);
   };
 
-  useEffect(()=>{
-    console.log('searchParams', searchParams)
-    if(!searchParams.get("search") && inputRef.current.value) {
+  useEffect(() => {
+    console.log("searchParams", searchParams);
+    if (!searchParams.get("search") && inputRef.current.value) {
       searchParams.delete("search");
       inputRef.current.value = "";
-    } 
-  })
+    }
+  });
+  // console.log("location", location);
+  // if (location.pathname !== "/") {
+  //   navigate(`/?search=${inputRef.current.value}`);
+  // } else setSearchParams({ search: inputRef.current.value });
 
   return (
     <nav>
