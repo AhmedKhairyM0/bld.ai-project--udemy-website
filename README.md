@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with React App Locally
+
+- First Getting data via running json-server
+    npx json-server --watch src/data/courses.json -p 3001
+
+- Second run react app
+    npm run start
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,10 +19,6 @@ json-server
 moment -> reformat date
 material ui
 material icons
-
-delete 
-expansion panel
-
 
 ## Available Scripts
 
