@@ -1,10 +1,14 @@
 # Getting Started with React App Locally
 
 - First Getting data via running json-server
-    npx json-server --watch src/data/courses.json -p 3001
+  ```bash
+   npx json-server --watch src/data/courses.json -p 3001
+  ```
 
 - Second run react app
+  ```bash
     npm run start
+  ```
 
 ## Getting Started with Create React App
 
