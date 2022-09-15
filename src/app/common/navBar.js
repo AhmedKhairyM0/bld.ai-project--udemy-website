@@ -37,10 +37,6 @@ function NavBar() {
       inputRef.current.value = "";
     }
   });
-  // console.log("location", location);
-  // if (location.pathname !== "/") {
-  //   navigate(`/?search=${inputRef.current.value}`);
-  // } else setSearchParams({ search: inputRef.current.value });
 
   return (
     <nav>
