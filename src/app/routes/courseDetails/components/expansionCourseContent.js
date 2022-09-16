@@ -12,8 +12,7 @@ import gStyles from "../courseDetails.module.css";
 import { CourseContext } from "../../../contexts/coursesContext";
 
 function CourseLectureAccordion({ lecture }) {
-  const { id, lessons, title, total_estimate_time } = lecture;
-  console.log("lecture$$$", lecture);
+  const { lessons, title, total_estimate_time } = lecture;
 
   return (
     <div>
@@ -27,7 +26,7 @@ function CourseLectureAccordion({ lecture }) {
             <Typography className={styles.courseContentItem}>
               <div href>{title}</div>
               <span
-                className={`${styles.lessonCourse}  ${styles.lessonCourseSpace}`}
+                className={`${styles.lessonCourse}`}
               >
                 <span>{lessons.length} lessons</span>
                 <span> {total_estimate_time} mins</span>
@@ -36,14 +35,14 @@ function CourseLectureAccordion({ lecture }) {
           </AccordionSummary>
         </div>
         {lessons.map((lesson) => {
-          const { id, title, estimate_time, is_preview } = lesson;
+          const { id, title, estimate_time,  } = lesson;
 
           return (
             <AccordionDetails key={id}>
               <Typography className={styles.courseContentItem}>
                 <span className={`${styles.lessonCourse}`}>
                   <PlayCircleIcon className={styles.playCourseIcon} />
-                  <a href>{title}</a>
+                  <a href="//">{title}</a>
                 </span>
                 <span>{estimate_time}:00 mins</span>
               </Typography>

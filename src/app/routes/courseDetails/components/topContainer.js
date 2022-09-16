@@ -15,6 +15,7 @@ function TopContainer() {
 
   return (
     <section className={`${globalStyles.darkContainer} ${globalStyles.paddingContainer}`}>
+      
       <div className={globalStyles.centerContainer}>
         <div className={styles.category}>{course.category}</div>
         <h1 className={styles.titleCourse}>{course.title}</h1>
@@ -30,7 +31,7 @@ function TopContainer() {
           Created by{" "}
           {course.instructors.map((instructor, index) => <a href={`#instructor-${index+1}`} key={instructor.id}>{instructor.name}, </a>)}
         </div>
-        <div className={globalStyles.flexContainer}>
+        <div className={styles.flex}>
           <IconLabeledComponent
             icon={<WatchLaterIcon />}
             label={`Last updated ${moment(course.update_date).format('YYYY-MM')}`}
@@ -38,7 +39,6 @@ function TopContainer() {
           <IconLabeledComponent icon={<LanguageIcon />} label={course.content_lang} />
           <IconLabeledComponent icon={<ClosedCaptionIcon />} label={course.caption_lang} />
         </div>
-        {/*  */}
       </div>
     </section>
   );

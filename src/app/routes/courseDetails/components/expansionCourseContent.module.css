@@ -5,16 +5,6 @@
   align-items: center;
 }
 
-.lessonCourse {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.lessonCourseSpace {
-  width: 20%;
-}
-
 .lessonCourse a {
   text-decoration: none;
   color: black;
@@ -47,4 +37,33 @@
 
 .showMoreBtn:hover {
   background-color: #ddd;
+}
+
+/*
+    breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+    );
+*/
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  .lessonCourse {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }

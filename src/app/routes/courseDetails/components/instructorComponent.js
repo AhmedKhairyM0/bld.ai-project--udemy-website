@@ -26,8 +26,7 @@ function InstructorsComponent() {
 }
 
 function InstructorComponent({ instructor, idd}) {
-  const {
-    id,
+  const { 
     name,
     image,
     job,

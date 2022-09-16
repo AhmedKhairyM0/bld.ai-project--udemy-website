@@ -1,10 +1,9 @@
 .sideBarContainer {
   position: absolute;
   top: 7rem;
-  right: 25rem;
+  right: 18rem;
   background-color: white;
   box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.3);
-  /* border-radius: 10px 10px 10px 10px; */
 }
 
 .sideBarIntro {
@@ -19,9 +18,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* position: absolute;
-  left: 0;
-  top: 0; */
 }
 
 .coursePreview {
@@ -144,8 +140,12 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hide {
@@ -154,4 +154,27 @@
 
 .block {
   display: block;
+}
+
+/*
+    breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+    );
+*/
+
+@media screen and (max-width: 1500px) {
+  .sideBarContainer {
+    right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sideBarContainer {
+    display: none;
+  }
 }

@@ -8,6 +8,7 @@ import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import moment from "moment";
 import { CourseContext } from "../../../contexts/coursesContext";
+import FadingTextCompontent from "./fadingTextComponent";
 
 const getNickName = (name) => {
   let nickName = "";
@@ -42,7 +43,7 @@ function ReviewsComponent() {
 }
 
 function ReviewComponent({ review }) {
-  const { id, reviewer, createAt, rate, review_text, helpful } = review;
+  const { reviewer, createAt, rate, review_text, helpful } = review;
 
   const [like, setLike] = useState(helpful);
   const [dislike, setDislike] = useState(!helpful);
@@ -55,7 +56,7 @@ function ReviewComponent({ review }) {
       if (dislike === true) setDislike(false);
     }
   };
-  
+
   const handleDislikeAction = () => {
     if (dislike === true) {
       setDislike(false);
@@ -80,7 +81,9 @@ function ReviewComponent({ review }) {
         </div>
       </div>
       <div className={styles.div2}>
-        <Typography>{review_text}</Typography>
+        <FadingTextCompontent>
+          <Typography>{review_text}</Typography>
+        </FadingTextCompontent>
         <Typography>Was this review helpful?</Typography>
         <div className={styles.reviewActionsSection}>
           <button
@@ -95,7 +98,7 @@ function ReviewComponent({ review }) {
           >
             {dislike ? <ThumbDownIcon /> : <ThumbDownOutlinedIcon />}
           </button>
-          <a href="#">Report</a>
+          <a href="//">Report</a>
         </div>
       </div>
     </div>

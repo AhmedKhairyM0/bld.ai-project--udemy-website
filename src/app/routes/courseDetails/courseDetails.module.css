@@ -19,3 +19,21 @@
 .marginContainer {
   margin: 2rem 0;
 }
+
+/*
+    breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+    );
+*/
+
+@media screen and (max-width: 1200px) {
+  .centerContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
