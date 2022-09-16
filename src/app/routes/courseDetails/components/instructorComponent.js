@@ -7,7 +7,6 @@ import gStyles from "../courseDetails.module.css";
 
 import Typography from "@mui/material/Typography";
 import IconLabeledComponent from "../../../common/iconLabeledComponent";
-import CourseDetails from "../courseDetails";
 import FadingTextCompontent from "./fadingTextComponent";
 import StarIcon from "@mui/icons-material/Star";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import CourseCard from "./courseCard";
 import styles from "./coursesSection.module.css";
 

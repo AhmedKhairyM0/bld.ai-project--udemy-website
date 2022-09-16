@@ -9,14 +9,6 @@ import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import moment from "moment";
 import { CourseContext } from "../../../contexts/coursesContext";
 
-const CircleButton = ({ icon }) => {
-  return (
-    <button className={`${styles.circle} ${styles.smCircle} ${styles.btn}`}>
-      {icon}
-    </button>
-  );
-};
-
 const getNickName = (name) => {
   let nickName = "";
   name.split(" ").forEach((val) => {
@@ -103,8 +95,6 @@ function ReviewComponent({ review }) {
           >
             {dislike ? <ThumbDownIcon /> : <ThumbDownOutlinedIcon />}
           </button>
-          {/* <CircleButton icon={<ThumbUpOutlinedIcon />} />
-          <CircleButton icon={<ThumbDownOutlinedIcon />} /> */}
           <a href="#">Report</a>
         </div>
       </div>

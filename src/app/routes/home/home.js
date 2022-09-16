@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import LoadingSpinner from "../../common/loadingSpinner";
 
 import CoursesTabContent from "./components/coursesTabContent";
+import ErrorRoute from '../error/errorRoute';
 
 function Home() {
-  const [isloading, setIsLoading] = useState(false);
+  const [, setIsLoading] = useState(false);
   const [data, setData] = useState("");
   const [error, setError] = useState("");
 
@@ -21,7 +22,6 @@ function Home() {
 
       })
       .catch((err) => {
-        console.log("err:::", err);
         setIsLoading(false);
         setError(err);
 
@@ -30,14 +30,11 @@ function Home() {
 
   const displayData = () => {
     if (error) {
-      // navigate to error route with msg as props
-      return <div>Error message</div>;
+      return <ErrorRoute />;
     }
     if (data !== "") {
-      console.log('data', data)
       return (
         <main>
-          {/* <WallpaperCarouselSlider /> */}
           <CoursesTabContent coursesTab={data} />
         </main>
       );

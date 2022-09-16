@@ -76,3 +76,23 @@ input {
 .toggleBtn2:hover {
   background-color: #eee;
 }
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .hideInLg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hideInMd {
+    display: none;
+  }
+
+  .showInMd {
+    display: inline-block;
+  }
+}

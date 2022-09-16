@@ -10,14 +10,12 @@ import ClosedCaptionIcon from '@mui/icons-material/ClosedCaption';
 import LanguageIcon from '@mui/icons-material/Language';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
 
-
 function TopContainer() {
   const course = useContext(CourseContext);
 
   return (
     <section className={`${globalStyles.darkContainer} ${globalStyles.paddingContainer}`}>
       <div className={globalStyles.centerContainer}>
-        {/* course image */}
         <div className={styles.category}>{course.category}</div>
         <h1 className={styles.titleCourse}>{course.title}</h1>
         <div className={styles.subtitleCourse}>{course.subtitle}</div>
