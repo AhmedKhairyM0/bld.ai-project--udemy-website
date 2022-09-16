@@ -1,0 +1,21 @@
+.whatLearnSection {
+  border: 0.5px solid #999;
+  padding: 2rem;
+  margin-top: 3rem;
+  /* justify-content: space-between; */
+}
+
+.whatLearnBody {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+}
+
+.whatLearnElement {
+    padding-right: 2rem; 
+}
+
+.checkMarkSymbol::before {
+  content: "✓";
+  padding-right: 0.2rem;
+}

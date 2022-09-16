@@ -1,0 +1,29 @@
+.insctructorSection {
+    margin-top: 1rem;   
+}
+
+.insctructorName {
+  color: #a435f0;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.insctructorJob {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.insctructorProfile {
+    display: flex;
+    margin-top: 1rem 
+
+}
+
+.insctructorImage img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem 
+}

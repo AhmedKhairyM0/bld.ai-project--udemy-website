@@ -1,0 +1,58 @@
+.review {
+  /* display: flex; */
+  margin: 2.2rem 0
+}
+.div1 {
+    display: flex;
+
+}
+.div2 {
+    margin-left: 7rem;
+
+}
+
+.profile {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 3rem
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.smCircle {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    border: solid 1px #999;
+    outline: none;
+    margin-right: 1rem;
+}
+
+.reviewActionsSection {
+    display: flex;
+    align-items: center
+}
+
+.reviewActionsSection>a {
+    /* text-decoration: ; */
+    color: #000
+}
+
+.clickedBtn {
+  background-color: #000;
+}
+
+.unclickedBtn {
+  background-color: #fff;
+}

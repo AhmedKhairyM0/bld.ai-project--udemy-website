@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Getting Started with React App Locally
+
+- First Getting data via running json-server
+  ```bash
+   npx json-server --watch src/data/courses.json -p 3001
+  ```
+
+- Second run react app
+  ```bash
+    npm run start
+  ```
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 3rd party packages
+
+react-router-dom
+react-accessible-accordion
+fontawesome
+json-server
+moment -> reformat date
+material ui
+material icons
 
 ## Available Scripts
 
@@ -68,3 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

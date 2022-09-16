@@ -1,0 +1,17 @@
+.errorStyle {
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    flex-direction:column;
+}
+
+.errorStyle p {
+    font-size: 5rem !important;
+}
+
+.errorStyle svg {
+    font-size: 15rem !important;
+    color: rgb(209, 1, 1);
+}
