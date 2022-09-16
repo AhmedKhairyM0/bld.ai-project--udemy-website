@@ -10,7 +10,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import SimCardDownloadIcon from "@mui/icons-material/SimCardDownload";
 
 function SidebarContainer() {
-  // const course = useContext(CourseContext);
+  const course = useContext(CourseContext);
 
   const [fix, setFix] = useState(false);
 
@@ -40,9 +40,9 @@ function SidebarContainer() {
       </button>
       <div className={styles.sideBarBody}>
         <Typography className={styles.sideBarPrice}>
-          <span className={styles.price}>Eg 149.99</span>
-          <span className={styles.oldPrice}>Eg 696.99</span>
-          <span className={styles.percentageSale}>78% off</span>
+          <span className={styles.price}>Eg {course.price}</span>
+          <span className={styles.oldPrice}>{course.old_price}</span>
+          <span className={styles.percentageSale}>{(100 - course.price / course.old_price * 100).toFixed(2)}% off</span>
         </Typography>
         <Typography className={styles.saleDays}>
           🕑 1 day left at this price
@@ -56,12 +56,12 @@ function SidebarContainer() {
           <h3>This course includes:</h3>
           <IconLabeledComponent
             icon={<LiveTvIcon />}
-            label={"14 hours on-demand video"}
+            label={course.includes.total_time_estimate}
           />
-          <IconLabeledComponent icon={<ArticleIcon />} label={"1 article"} />
+          <IconLabeledComponent icon={<ArticleIcon />} label={course.includes.articles_num} />
           <IconLabeledComponent
             icon={<SimCardDownloadIcon />}
-            label={`3 downloadable resources`}
+            label={course.includes.featues}
           />
         </div>
         <div>

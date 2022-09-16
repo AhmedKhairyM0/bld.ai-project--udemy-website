@@ -1,11 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  Link,
-  useLocation,
-  useNavigate,
-  useParams,
-  useSearchParams,
-} from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +7,10 @@ import {
   faCartShopping,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LanguageIcon from '@mui/icons-material/Language';
 
 import styles from "./navBar.module.css";
 
@@ -20,8 +18,7 @@ import logo from "../../assets/images/logo-udemy.svg";
 
 function NavBar() {
   const inputRef = useRef();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const location = useLocation();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -40,17 +37,18 @@ function NavBar() {
 
   return (
     <nav>
+     <span className={`${styles.hide} ${styles.showInMd}`}> <MenuIcon /></span>
       <Link to="/">
         <img src={logo} alt={"Udemy Logo"} className={styles.websiteLogo} />
       </Link>
-      <span className={styles.navItem}>Categories</span>
-      <form className={styles.searchBar}>
+      <span className={`${styles.navItem} ${styles.hideInMd}`}>Categories</span>
+      <form className={`${styles.searchBar} ${styles.hideInMd}`}>
         <button
           className={styles.searchBtn}
           onClick={handleSubmit}
           type="sumbit"
         >
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <SearchIcon />
         </button>
         <input
           ref={inputRef}
@@ -59,14 +57,15 @@ function NavBar() {
           onSumbit={handleSubmit}
         />
       </form>
-      <span>
+      <span className={styles.hideInLg}>
         <span className={styles.navItem}>Udemy Business</span>
         <span className={styles.navItem}>Tech on Udemy</span>
       </span>
-      <span className={styles.navItem}>
-        <FontAwesomeIcon icon={faCartShopping} />
+      <span>
+        <span className={`${styles.hide} ${styles.showInMd}`}><SearchIcon/></span>
+        <ShoppingCartIcon />
       </span>
-      <span className={styles.groupBtn}>
+      <span className={`${styles.groupBtn} ${styles.hideInMd}`}>
         <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}>
           Login
         </span>
@@ -74,7 +73,7 @@ function NavBar() {
           Signup
         </span>
         <span className={`${styles.commonBtn} ${styles.toggleBtn2}`}>
-          <FontAwesomeIcon icon={faGlobe} />
+          <LanguageIcon />
         </span>
       </span>
     </nav>

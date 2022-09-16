@@ -9,7 +9,7 @@ import IconLabeledComponent from '../../../common/iconLabeledComponent';
 import ClosedCaptionIcon from '@mui/icons-material/ClosedCaption';
 import LanguageIcon from '@mui/icons-material/Language';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
-
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 function TopContainer() {
   const course = useContext(CourseContext);
@@ -17,7 +17,17 @@ function TopContainer() {
   return (
     <section className={`${globalStyles.darkContainer} ${globalStyles.paddingContainer}`}>
       <div className={globalStyles.centerContainer}>
-        {/* course image */}
+      <button className={`${styles.sideBarIntro} ${true ? styles.hide : styles.block}`}>
+        <img
+          className={styles.imageCourse}
+          src={`https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg`}
+          alt={``}
+        />
+        <span className={styles.playCourseIcon}>
+          <PlayArrowIcon className={styles.playIcon} />
+        </span>
+        <span className={styles.coursePreview}>Preview this course</span>
+      </button>
         <div className={styles.category}>{course.category}</div>
         <h1 className={styles.titleCourse}>{course.title}</h1>
         <div className={styles.subtitleCourse}>{course.subtitle}</div>
