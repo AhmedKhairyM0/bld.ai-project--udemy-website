@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import globalStyles from "../courseDetails.module.css";
 import styles from "./topContainer.module.css";
-import { CourseRating } from "../../home/components/courseCard";
+import  CourseRating  from "./courseRating"
 import { CourseContext } from "../../../contexts/coursesContext";
 import moment from 'moment';
 import IconLabeledComponent from '../../../common/iconLabeledComponent';

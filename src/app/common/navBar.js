@@ -22,7 +22,7 @@ function NavBar() {
   };
 
   useEffect(() => {
-    console.log("searchParams", searchParams);
+    
     if (!searchParams.get("search") && inputRef.current.value) {
       searchParams.delete("search");
       inputRef.current.value = "";

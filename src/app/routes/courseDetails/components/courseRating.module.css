@@ -1,0 +1,18 @@
+.courseRating {
+  color: rgb(229, 195, 0);
+  display: inline-block;
+}
+
+.courseRatingNum {
+  font-weight: 800;
+}
+.starsRating {
+  display: inline-flex;
+  margin: 0 3px;
+}
+
+.courseViews {
+  font-size: 0.8rem;
+  color: #555;
+}
+

@@ -25,14 +25,10 @@ function FadingTextCompontent(props) {
 
   const elementRef = useRef();
 
-  const scrollClient = elementRef.current?.scrollHeight;
-  console.log('scrollClient', scrollClient)
-
   useEffect(() => {
     const heightClient = elementRef.current?.clientHeight;
     const scrollClient = elementRef.current?.scrollHeight;
-
-    console.log('scrollClient', scrollClient)
+    
     if (heightClient !== scrollClient) {
       setIsOverflow(true);
       setHeightMax(scrollClient);

@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React, { useContext, useState } from "react";
-import { CourseRating } from "../../home/components/courseCard";
+import CourseRating from "./courseRating";
 import styles from "./reviewComponent.module.css";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";

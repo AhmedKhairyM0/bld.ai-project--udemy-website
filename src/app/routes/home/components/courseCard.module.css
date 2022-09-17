@@ -28,30 +28,6 @@
   font-size: 0.9rem;
 }
 
-.courseRating {
-  color: rgb(229, 195, 0);
-  display: inline-block;
-}
-
-.courseRatingStars {
-  font-size: 0.4rem;
-  margin: 0 0.2rem;
-}
-
-.courseRatingNum {
-  font-weight: 800;
-}
-
-.starsRating {
-  display: inline-flex;
-  margin: 0 3px;
-}
-
-.courseViews {
-  font-size: 0.8rem;
-  color: #555;
-}
-
 .coursePrice {
   color: #222;
   font-weight: 700;

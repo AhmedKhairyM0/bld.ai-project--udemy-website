@@ -15,7 +15,7 @@ function SidebarContainer() {
   const [fix, setFix] = useState(false);
 
   const setFixedSideBar = () => {
-    console.log("window.scrollY", window.scrollY);
+    
     window.scrollY >= 400 ? setFix(true) : setFix(false);
   };
 

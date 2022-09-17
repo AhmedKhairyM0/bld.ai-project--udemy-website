@@ -18,11 +18,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 react-router-dom
 react-accessible-accordion
-fontawesome
 json-server
 moment -> reformat date
 material ui
 material icons
+react-loader-spinner
+react-stars
 
 ## Available Scripts
 
