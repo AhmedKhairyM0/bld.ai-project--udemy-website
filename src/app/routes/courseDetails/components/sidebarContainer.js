@@ -65,9 +65,9 @@ function SidebarContainer() {
           />
         </div>
         <div>
-          <a className={styles.resource} href="//">Share</a>
-          <a className={styles.resource} href="//">Gift this course</a>
-          <a className={styles.resource} href="//">Apply Coupon</a>
+          <a className={styles.resource}>Share</a>
+          <a className={styles.resource}>Gift this course</a>
+          <a className={styles.resource}>Apply Coupon</a>
         </div>
       </div>
     </section>

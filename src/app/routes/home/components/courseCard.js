@@ -12,7 +12,6 @@ function CourseCard({ course }) {
       className={styles.courseLink}
     >
       <div className={styles.courseCard}>
-        {/* <a href={course.link}> */}
         <img src={course.image} alt={course.title} />
         <div className={styles.courseTitle}>
           <h3>{course.title}</h3>
@@ -26,7 +25,6 @@ function CourseCard({ course }) {
         {course.best_seller ? (
           <div className={styles.courseBestseller}>Bestseller</div>
         ) : null}
-        {/* </a> */}
       </div>
     </Link>
   );

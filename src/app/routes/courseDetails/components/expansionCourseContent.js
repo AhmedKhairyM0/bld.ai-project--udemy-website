@@ -25,9 +25,7 @@ function CourseLectureAccordion({ lecture }) {
           >
             <Typography className={styles.courseContentItem}>
               <div href>{title}</div>
-              <span
-                className={`${styles.lessonCourse}`}
-              >
+              <span className={`${styles.lessonCourse}`}>
                 <span>{lessons.length} lessons</span>
                 <span> {total_estimate_time} mins</span>
               </span>
@@ -35,14 +33,14 @@ function CourseLectureAccordion({ lecture }) {
           </AccordionSummary>
         </div>
         {lessons.map((lesson) => {
-          const { id, title, estimate_time,  } = lesson;
+          const { id, title, estimate_time } = lesson;
 
           return (
             <AccordionDetails key={id}>
               <Typography className={styles.courseContentItem}>
                 <span className={`${styles.lessonCourse}`}>
                   <PlayCircleIcon className={styles.playCourseIcon} />
-                  <a href="//">{title}</a>
+                  <a>{title}</a>
                 </span>
                 <span>{estimate_time}:00 mins</span>
               </Typography>
@@ -59,7 +57,9 @@ function ExpansionCourseContent() {
   const lectures = course.content;
   const numOfShownSection = 5;
 
-  const [showMoreCourses, setShowMoreCourses] = useState(numOfShownSection >= lectures.length);
+  const [showMoreCourses, setShowMoreCourses] = useState(
+    numOfShownSection >= lectures.length
+  );
 
   const lecutresComponents = lectures.map((lecture) => (
     <CourseLectureAccordion
@@ -68,29 +68,36 @@ function ExpansionCourseContent() {
     />
   ));
 
-  let display = showMoreCourses ? lecutresComponents : lecutresComponents.slice(0, numOfShownSection) ;
+  let display = showMoreCourses
+    ? lecutresComponents
+    : lecutresComponents.slice(0, numOfShownSection);
 
   const handleShowMore = () => {
     setShowMoreCourses(true);
   };
 
-  const getLessonsNum = ()=>{
+  const getLessonsNum = () => {
     let len = 0;
-    lectures.forEach((lect)=>{
+    lectures.forEach((lect) => {
       len += lect.lecture.lessons.length;
     });
 
     return len;
-  }
-  
+  };
+
   return (
     <section className={gStyles.marginContainer}>
       <h2 className={styles.courseContentHeading}>Course content</h2>
       <Typography>
-      {lectures.length} sections • {getLessonsNum()} lectures • {course.includes.total_time_estimate}
+        {lectures.length} sections • {getLessonsNum()} lectures •{" "}
+        {course.includes.total_time_estimate}
       </Typography>
       {display}
-      { !showMoreCourses && <button className={styles.showMoreBtn} onClick={handleShowMore}>{lectures.length - numOfShownSection} more sections</button>}
+      {!showMoreCourses && (
+        <button className={styles.showMoreBtn} onClick={handleShowMore}>
+          {lectures.length - numOfShownSection} more sections
+        </button>
+      )}
     </section>
   );
 }

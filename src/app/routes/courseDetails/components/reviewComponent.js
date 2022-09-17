@@ -98,7 +98,7 @@ function ReviewComponent({ review }) {
           >
             {dislike ? <ThumbDownIcon /> : <ThumbDownOutlinedIcon />}
           </button>
-          <a href="//">Report</a>
+          <a>Report</a>
         </div>
       </div>
     </div>
