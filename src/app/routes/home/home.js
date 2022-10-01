@@ -3,6 +3,7 @@ import LoadingSpinner from "../../common/loadingSpinner";
 
 import CoursesTabContent from "./components/coursesTabContent";
 import ErrorRoute from '../error/errorRoute';
+import Header from "./components/header";
 
 function Home() {
   const [, setIsLoading] = useState(false);
@@ -35,6 +36,7 @@ function Home() {
     if (data !== "") {
       return (
         <main>
+          <Header />
           <CoursesTabContent coursesTab={data} />
         </main>
       );
